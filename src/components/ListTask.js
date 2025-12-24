@@ -8,7 +8,7 @@ export default function ListTask() {
   const filtered = items.filter((t) => {
     if (filter === "done") return t.isDone === true;
     if (filter === "not") return t.isDone === false;
-    return true; // "all"
+    return true; 
   });
   const pillClass = (name) => (name === filter ? "pill pillActive" : "pill");
   return (
